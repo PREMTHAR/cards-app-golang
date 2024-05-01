@@ -1,0 +1,9 @@
+Standard library definitions:
+golang.org/pkg
+
+Static Type lang: just like Java, C++, Golang
+(whenever we assign a variable we define a type whether the variable is string or integer)
+
+Dynamic type lang: Javascript, Ruby, python
+(the interpreter does not care about if we assign a variable to integer, then later on assign it to a String)
+
