@@ -2,8 +2,10 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
 	"os"
 	"strings"
+	"time"
 )
 
 // Create a new data type with name "deck"
@@ -65,4 +67,17 @@ func newDeckFromFile(filename string) deck {
 	}
 	s := strings.Split(string(bs), ",") //Ace of spades, One of spades
 	return deck(s)
+}
+
+// Shuffle - nothing to retrun so no return type mentioned
+func (d deck) Shuffle() {
+	//random nuber operates through some seeding
+	//Now we are passing our own seeding instead of available in the rand package
+	source := rand.NewSource(time.Now().UnixNano())
+	r := rand.New(source)
+	for i := range d {
+		// newPosition := rand.Intn(len(d) - 1)
+		newPosition := r.Intn(len(d) - 1)
+		d[i], d[newPosition] = d[newPosition], d[i]
+	}
 }

@@ -7,3 +7,10 @@ Static Type lang: just like Java, C++, Golang
 Dynamic type lang: Javascript, Ruby, python
 (the interpreter does not care about if we assign a variable to integer, then later on assign it to a String)
 
+Go testing is not RSpec, mocha, jasmine, selenium. (so suffosticated)
+
+deck_test.go (go testing)
+
+go build
+go run
+go test

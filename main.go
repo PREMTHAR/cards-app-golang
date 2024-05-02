@@ -65,9 +65,14 @@ func main() {
 
 	// cards.saveToFile("my_cards")
 
-	readCards := newDeckFromFile("my_cards")
+	// readCards := newDeckFromFile("my_cards")
 
-	readCards.print()
+	// readCards.print()
+
+	cards := newDeck()
+
+	cards.Shuffle()
+	cards.print()
 
 }
 

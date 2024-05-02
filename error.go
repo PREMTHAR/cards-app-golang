@@ -1,6 +1,10 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
+
+func newTest() {
+	fmt.Println("Hi There")
+}
 
 // func main() {
 // 	c := color("Red")
